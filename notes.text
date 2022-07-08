@@ -1,0 +1,22 @@
+SELECT eu.uin, e.name
+FROM employee e
+JOIN employee_uin eu
+ON e.id = eu.id
+WHERE e.age < 25
+ORDER BY e.name, e.id;
+
+SELECT id,
+    name
+FROM customer
+WHERE country LIKE 'USA'
+    AND credits > 100000
+ORDER BY id;
+
+
+select sum(D_AMOUNT)+sum(C_AMOUNT)+sum(FEE)
+SELECT
+account_holder,
+CONCAT( '$', ROUND( SUBSTRING( amount, 2 ) * 0.05, 2 ) ) AS interest
+FROM
+accounts
+ORDER BY 1

@@ -1,0 +1,58 @@
+body {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  /* grid-template-columns: ; */
+}
+h1 {
+  border-bottom: 1;
+  text-transform: uppercase;
+}
+
+h4 {
+  border-right: solid 1px;
+  width: 100px;
+  text-align: center;
+}
+
+h4:first-child {
+  font-size: 40px;
+}
+
+h4:last-child {
+  border: 0;
+}
+
+header {
+  top: 0;
+  background-color: red;
+  border-bottom: solid 1px;
+  grid-column: 1/4;
+  height: auto;
+}
+
+aside {
+  left: 0;
+  border-right: solid 1px 80%;
+  background-color: yellow;
+}
+
+article {
+  background-color: green;
+}
+
+article header {
+  background-color: blue;
+}
+
+.tools,
+.headings,
+.search-input {
+  border-bottom: solid 1px;
+  width: auto;
+}
+
+.headings {
+  display: flex;
+  justify-items: center;
+}
